@@ -8,7 +8,7 @@ class Gitfetch < Formula
   sha256 "6bcf56774b57a4c03679a2da168934ba048d863af68454be1b613bcebf86aa2b"
   license "GPL-2.0"
 
-  depends_on "python@3.9"
+  depends_on "python@3.11"
 
   def install
     virtualenv_install_with_resources
