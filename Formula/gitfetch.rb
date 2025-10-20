@@ -10,6 +10,11 @@ class Gitfetch < Formula
 
   depends_on "python@3.11"
 
+  resource "requests" do
+    url "https://files.pythonhosted.org/packages/63/70/2bf7780ad2d390a8d301ad0b550f1581eadbd9a20f896afe06353c2a2913/requests-2.32.3.tar.gz"
+    sha256 "55365417734eb18255590a9ff9eb97e9e1da868d4ccd6402399eaf68af20a760"
+  end
+
   def install
     virtualenv_install_with_resources
   end
