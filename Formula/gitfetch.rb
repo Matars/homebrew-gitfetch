@@ -5,7 +5,7 @@ class Gitfetch < Formula
   homepage "https://github.com/Matars/gitfetch"
   url "https://github.com/Matars/gitfetch/archive/refs/tags/v1.0.2.tar.gz"
   version "1.0.2"
-  sha256 "PLACEHOLDER_SHA256"
+  sha256 "604ad6e3c70ca08cea17bf9ca9236476b739ecc5b35e3821c7304bdf156a21c1"
   license "GPL-2.0"
 
   depends_on "python@3.8"
