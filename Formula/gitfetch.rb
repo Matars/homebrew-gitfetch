@@ -3,9 +3,9 @@ class Gitfetch < Formula
 
   desc "A neofetch-style CLI tool for GitHub statistics"
   homepage "https://github.com/Matars/gitfetch"
-  url "https://github.com/Matars/gitfetch/archive/refs/tags/v1.0.2.tar.gz"
-  version "1.0.2"
-  sha256 "604ad6e3c70ca08cea17bf9ca9236476b739ecc5b35e3821c7304bdf156a21c1"
+  url "https://github.com/Matars/gitfetch/archive/refs/tags/v1.0.3"
+  version "1.0.3"
+  sha256 "350a0d006c0db5182fdbe82abffcbd0c17b5ad5036d79199eb5c7fe6f6f9fcdd"
   license "GPL-2.0"
 
   depends_on "python@3.8"
