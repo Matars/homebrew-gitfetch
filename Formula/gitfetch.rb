@@ -12,7 +12,7 @@ class Gitfetch < Formula
 
   def install
     virtualenv_install_with_resources
-    system "#{libexec}/bin/pip", "install", "requests>=2.0.0"
+    system "python3.11", "-m", "pip", "--python=#{libexec}/bin/python", "install", "requests>=2.0.0"
   end
 
   test do
