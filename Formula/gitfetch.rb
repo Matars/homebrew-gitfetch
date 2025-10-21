@@ -21,7 +21,7 @@ class Gitfetch < Formula
 
   resource "idna" do
     url "https://files.pythonhosted.org/packages/6f/6d/0703ccc57f3a7233505399edb88de3cbd678da106337b9fcde432b65ed60/idna-3.11.tar.gz"
-    sha256 "a4db93164c974401e757d65134f7eb1d2324e900bdb9260cc97a00897a7a4213"
+    sha256 "795dafcc9c04ed0c1fb032c2aa73654d8e8c5023a7df64a53f39190ada629902"
   end
 
   resource "readchar" do
