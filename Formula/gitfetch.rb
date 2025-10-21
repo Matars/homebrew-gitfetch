@@ -11,7 +11,7 @@ class Gitfetch < Formula
 
   resource "certifi" do
     url "https://files.pythonhosted.org/packages/4c/5b/b6ce21586237c77ce67d01dc5507039d444b630dd76611bbca2d8e5dcd91/certifi-2025.10.5.tar.gz"
-    sha256 "a4db93164c974401e757d65134f7eb1d2324e900bdb9260cc97a00897a7a4213"
+    sha256 "47c09d31ccf2acf0be3f701ea53595ee7e0b8fa08801c6624be771df09ae7b43"
   end
 
   resource "charset-normalizer" do
