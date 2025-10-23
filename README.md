@@ -11,7 +11,7 @@ brew install matars/homebrew-gitfetch/gitfetch
 Or tap the repository first:
 
 ```bash
-brew tap matars/homebrew-gitfetch
+brew tap matars/gitfetch
 brew install gitfetch
 ```
 
