@@ -3,8 +3,8 @@ class Gitfetch < Formula
 
   desc "A neofetch alternative for GitHub quick view"
   homepage "https://github.com/Matars/gitfetch"
-  url "https://github.com/Matars/gitfetch/archive/refs/tags/v1.2.4.tar.gz"
-  sha256 "b4aaf20cecfcb244ed66d9ba32e5f6a36492942925a0a943395d4760164cab73"
+  url "https://github.com/Matars/gitfetch/archive/refs/tags/v1.2.3.tar.gz"
+  sha256 "83896b1680919890011a5efb5eca00e00afe7e1143066e82a81112d4a0255266"
   license "GPL-2.0"
 
   depends_on "python@3.14"
