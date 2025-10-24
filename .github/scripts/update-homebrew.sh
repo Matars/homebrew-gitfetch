@@ -11,6 +11,15 @@ fi
 
 SHASUM=$(curl -sL "https://github.com/Matars/gitfetch/archive/refs/tags/v${VERSION}.tar.gz" | shasum -a 256 | awk '{print $1}')
 
+# Detect OS for sed compatibility
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  SED_INPLACE="sed -i ''"
+else
+  SED_INPLACE="sed -i"
+fi
+
+SHASUM=$(curl -sL "https://github.com/Matars/gitfetch/archive/refs/tags/v${VERSION}.tar.gz" | shasum -a 256 | awk '{print $1}')
+
 $SED_INPLACE '6s/.*/  url "https:\/\/github.com\/Matars\/gitfetch\/archive\/refs\/tags\/v'${VERSION}'.tar.gz"/' Formula/gitfetch.rb
 $SED_INPLACE '7s/.*/  sha256 "'${SHASUM}'"/' Formula/gitfetch.rb
 
@@ -31,3 +40,8 @@ $SED_INPLACE '34s/.*/    sha256 "'${REQUESTS_SHASUM}'"/' Formula/gitfetch.rb
 
 URLLIB3_SHASUM=$(curl -sL "https://files.pythonhosted.org/packages/15/22/9ee70a2574a4f4599c47dd506532914ce044817c7752a79b6a51286319bc/urllib3-2.5.0.tar.gz" | shasum -a 256 | awk '{print $1}')
 $SED_INPLACE '39s/.*/    sha256 "'${URLLIB3_SHASUM}'"/' Formula/gitfetch.rb
+
+# Clean up backup files created by sed on macOS
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  rm -f "Formula/gitfetch.rb''"
+fi
